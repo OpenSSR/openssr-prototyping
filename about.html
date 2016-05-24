@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>OpenSSR</title>
+    <title>About - OpenSSR</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
 
@@ -36,9 +37,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Topics</a></li>
-            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="about.html">About</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -58,38 +59,28 @@
 
     <div class="container">
 
-    <!-- Jumbotron for home page -->
-    <div class="jumbotron">
-      <h1>Open Social Science Research</h1>
+      <h1>About OpenSSR</h1>
       <p class="lead">OpenSSR is a new <mark>free, open, and innovative</mark> library of social science research.</p>
-      <p>Authors can freely upload papers. Readers can freely download them. Anyone can freely subscribe to email updates by topic, author, and more. OpenSSR is operated by a non-profit organization, and it runs on modern open-source software.</p>
-      <p>
-        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Start browsing &raquo;</a>
-      </p>
-    </div>
 
-    <!-- Latest uploads -->
-    <h2>Latest Uploads</h2>
-    <div id="latest">
-      <table class="table table-striped">
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Categories</th>
-          <th>Uploaded</th>
-          <th>Pages</th>
-          <th>Citations</th>
-        </tr>
-        <tr>
-          <td><a href="paper.html">How Law Made Silicon Valley</td></td>
-          <td><a href="author.html">Anupam Chander</a></td>
-          <td>Internet Law</td>
-          <td>Today</td>
-          <td>57</td>
-          <td><span class="glyphicon glyphicon-hourglass"></span></td>
-        </tr>
-      </table>
-    </div>
+      <h3>Free</h3>
+      <ul>
+        <li>Authors can freely upload papers.</li>
+        <li>Readers can freely browse and download papers, without intrustive tracking.</li>
+        <li>Anyone can freely subscribe to email updates by topic, author, and more.</li>
+      </ul>
+
+      <h3>Open</h3>
+      <ul>
+        <li>OpenSSR is operated transparently by a non-profit organization.</li>
+        <li>Anyone can view and contribute to the modern open-source software that powers OpenSSR.</li>
+        <li>OpenSSR encourages bulk downloading of its entire corpus and metadata.</li>
+      </ul>
+
+      <h3>Innovative</h3>
+      <ul>
+        <li>OpenSSR is pioneering new ways to measure scholarly impact. Our
+          open approach means anyone can create and test new metrics.</li>
+      </ul>
 
     </div>
 
@@ -112,5 +103,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Initialize popovers (https://getbootstrap.com/javascript/#popovers) -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
   </body>
 </html>

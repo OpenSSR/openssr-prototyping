@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="css/extra.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,13 +33,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">OpenSSR</a>
+          <a class="brand-logo pull-left" rel="home" href="index.html"><img src="img/500px-Open_Access_logo_PLoS_transparent.svg.png" height="20px"/></a><a class="navbar-brand" rel="home" href="index.html">OpenSSR</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Topics</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -57,13 +60,13 @@
     <div class="container">
 
     <h1>How Law Made Silicon Valley</h1>
-    <h2><a href="author.html">Anupam Chander</a></h2>
+    <h2><a href="author.html">Anupam Chander</a> <small>UC Davis School of Law</small></h2>
 
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Abstract</h3>
       </div>
-      <div class="panel-body">
+      <div class="panel-body" id="abstract">
         <p>Explanations for the success of Silicon Valley focus on the confluence of capital and education. In this article, I put forward a new explanation, one that better elucidates the rise of Silicon Valley as a global trader. Just as nineteenth century American judges altered the common law in order to subsidize industrial development, American judges and legislators altered the law at the turn of the Millennium to promote the development of Internet enterprise. Europe and Asia, by contrast, imposed strict intermediary liability regimes, inflexible intellectual property rules, and strong privacy constraints, impeding local Internet entrepreneurs. The study challenges the conventional wisdom that holds that strong intellectual property rights undergird innovation. While American law favored both commerce and speech enabled by this new medium, European and Asian jurisdictions attended more to the risks to intellectual property rights-holders and, to a lesser extent, ordinary individuals. Innovations that might be celebrated in the United States could lead to jail in Japan. I show how American companies leveraged their liberal home base to become global leaders in cyberspace. Nations seeking to incubate their own Silicon Valley must focus not only on money and education, but also a law that embraces innovation.</p>
       </div>
     </div>
@@ -90,7 +93,7 @@
       -->
       <table class="table">
         <tr class="success">
-          <th>Forward Citations</th>
+          <th>Forward Citations <span class="glyphicon glyphicon-info-sign info-forward-citations" data-container="body" data-toggle="popover" data-placement="top" data-content="Some information about how forward citations are counted would be great here."></span></th>
           <td>X</td>
         </tr>
         <tr>
@@ -106,9 +109,30 @@
 
     </div>
 
+    <!-- Page footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-left">Website &copy; OpenSSR 2016</p>
+        <div class="pull-right">
+          <ul class="list-inline">
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">API &amp; Bulk Downloads</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Initialize popovers (https://getbootstrap.com/javascript/#popovers) -->
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
   </body>
 </html>

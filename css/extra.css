@@ -1,0 +1,19 @@
+#abstract {
+  font-size: 16px;
+}
+
+.footer {
+  padding-top: 1em;
+  background-color: #f5f5f5;
+}
+
+.brand-logo img {
+  margin-top: 12px;
+  margin-right: 6px;
+}
+
+.info-forward-citations {
+}
+.verified {
+  color: green;
+}
