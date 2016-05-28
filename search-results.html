@@ -20,8 +20,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Tipue Search -->
-    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">  </head>
+    <!-- Tipue Search - Results -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="tipuesearch/tipuesearch_content.js"></script>
+    <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="tipuesearch/tipuesearch_set.js"></script>
+    <script src="tipuesearch/tipuesearch.min.js"></script>
+  </head>
   <body>
 
     <!-- Static navbar -->
@@ -38,7 +43,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#">Topics</a></li>
             <li><a href="#">Submit</a></li>
             <li><a href="about.html">About</a></li>
@@ -61,39 +66,11 @@
 
     <div class="container">
 
-    <!-- Jumbotron for home page -->
-    <div class="jumbotron">
-      <h1>Open Social Science Research</h1>
-      <p class="lead">OpenSSR is a <mark>free, open, and innovative</mark> library of social science research.</p>
-      <p>Authors can freely upload papers. Readers can freely download them. Anyone can freely subscribe to email updates by topic, author, and more. OpenSSR is operated by a non-profit organization, and runs on modern open-source software.</p>
-      <p>
-        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Start browsing &raquo;</a>
-      </p>
-    </div>
-
-    <!-- Latest uploads -->
-    <h2>Latest Uploads</h2>
-    <div id="latest">
-      <table class="table table-striped">
-        <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Categories</th>
-          <th>Uploaded</th>
-          <th>Pages</th>
-          <th>Citations</th>
-        </tr>
-        <tr>
-          <td><a href="paper.html">How Law Made Silicon Valley</td></td>
-          <td><a href="author.html">Anupam Chander</a></td>
-          <td>Internet Law</td>
-          <td>Today</td>
-          <td>57</td>
-          <td><span class="glyphicon glyphicon-hourglass"></span></td>
-        </tr>
-      </table>
-    </div>
-
+      <h1>Results</h1>
+      <form action="search-results.html">
+        <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+      </form>
+      <div id="tipue_search_content"></div>
     </div>
 
     <!-- Page footer -->
@@ -110,6 +87,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- Tipue Search - Results -->
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch();
+    });
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
