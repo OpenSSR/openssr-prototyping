@@ -17,3 +17,11 @@
 .verified {
   color: green;
 }
+#top-banner {
+  background-color: #e44;
+  color: #a00;
+  padding: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
