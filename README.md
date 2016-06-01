@@ -8,3 +8,8 @@ open access, open source replacement for [SSRN](http://ssrn.com/) might look lik
 ## License
 
 Like the rest of OpenSSR, this repository is licensed under the [GNU Affero GPL v3](LICENSE) license.
+
+Some included components are under other licenses:
+
+* Twitter Bootstrap: MIT License
+* Tipue Search: MIT License
